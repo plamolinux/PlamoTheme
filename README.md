@@ -4,9 +4,7 @@ This is a theme called "plamolinux" for octopress. This theme is for Plamo Linux
 
 ## Install this theme
 
-...
-$ cd octopress
-$ git clone https://github.com/plamolinux/PlamoTheme.git .themes/plamolinux
-$ rake install['plamolinux']
-$ rake generate
-...
+    $ cd octopress
+    $ git clone https://github.com/plamolinux/PlamoTheme.git .themes/plamolinux
+    $ rake install['plamolinux']
+    $ rake generate
