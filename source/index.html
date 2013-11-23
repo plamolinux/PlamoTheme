@@ -3,6 +3,9 @@ layout: default
 ---
 
 <div class="blog-index">
+  <article>
+      {% include plamodesc.html %}
+  </article>
   {% assign index = true %}
   {% for post in paginator.posts %}
   {% assign content = post.content %}
