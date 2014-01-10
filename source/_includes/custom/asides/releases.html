@@ -1,0 +1,14 @@
+<section>
+  <h1>Release Information</h1>
+  <ul id="release_info">
+    {% for post in site.posts limit: site.recent_posts %}
+      {% for category in post.categories %}
+        {% if category == 'リリース情報' %}
+          <li class="post">
+            <a href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </ul>
+</section>
