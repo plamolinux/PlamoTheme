@@ -1,7 +1,7 @@
 <section>
   <h1>Release Information</h1>
   <ul id="release_info">
-    {% for post in site.posts limit: site.recent_posts %}
+    {% for post in site.posts %}
       {% for category in post.categories %}
         {% if category == 'リリース情報' %}
           <li class="post">
